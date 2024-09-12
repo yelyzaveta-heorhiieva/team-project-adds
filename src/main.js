@@ -36,13 +36,11 @@ const drops =
 
 drops.forEach(function (drop) {
     drop.addEventListener('click',
-        function () {
-            menu.classList.remove('is-open');
-        },
         function (event) {
            drops.forEach(function (drop) {
                 drop.classList.remove('current');
             });
             this.classList.add('current');
+            // menu.classList.remove('is-open');
         });
     });
