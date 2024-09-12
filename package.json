@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/lords-of-markup/",
+    "build": "vite build --base=/team-project-adds/",
     "preview": "vite preview"
   },
   "devDependencies": {
