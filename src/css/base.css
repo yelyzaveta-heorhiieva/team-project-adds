@@ -1,0 +1,73 @@
+:root {
+  --main: #0c0c0c;
+  --accent: #3350e9;
+  --background: #fbfbfb;
+  --cards: #f3f3f3;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../font/Gilroy-Regular.woff);
+  src: url(../font/Gilroy-Regular.woff2);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../font/Gilroy-Medium.woff);
+  src: url(../font/Gilroy-Medium.woff2);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../font/Gilroy-Semibold.woff);
+  src: url(../font/Gilroy-Semibold.woff2);
+  font-weight: 600;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  color: var(--main);
+  background-color: var(--background);
+  font-family: 'Gilroy', sans-serif;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 60px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    gap: 80px;
+    padding: 80px 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  main {
+    gap: 100px;
+    padding: 100px 0;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
